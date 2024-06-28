@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    margin-top: 200px;
+}
+
+/*repeat(3, 1fr);*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    padding: 20px 100px;
+    padding-left: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+    
+    
+}
+
+.logo{
+    font-size: 70px;
+    color: #FC33FF ;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.logos {
+    max-width: 7.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    font-size:30px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    color: rgb(233, 233, 233);
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    transition: 1.5s;
+}
+
+
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    padding: 2%;
+
+  }
+
+  .card .Face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+  }
+
+  .card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+  } */
+ .vitral{
+    max-width: 100%;
+     width: 200%;
+    height: 200%; 
+
+
+    
+ }
+  .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+  }
+
+  /* .card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+  }
+
+.card .back .link .a{
+    color: #f3f3f3;
+}
+
+.card .back .h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+} */
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+.ContainerCard1{
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    justify-content: center;
+}
+.ContainerCard2{
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.ContainerCard3{
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    justify-content: center;
+
+}
+
+.Card1{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 150px;
+ 
+}
+.Card1 img{
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.text11{
+    display: block;
+    color: #dddf00;
+    margin: 17px;
+    padding: 2px;
+    background-color: #000;
+    border-radius: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 70%;
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    
+}
+
+.biografia{
+    color: #d3d0d0;
+    border: 20px;
+    border-radius: 5%;
+    background-color: rgb(58, 57, 57);
+    text-decoration: none;
+    font-weight: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+img{
+    max-width: 100%;
+    padding: 0px;
+
+}
+h1{
+    padding: 10px;
+}
+
+form{
+padding: 30px;
+display: flex;
+flex-direction: column;
+}
+
+form input{
+    max-width: 300px;
+    height: 50px;
+}
+
+form select{
+    max-width: 300px;
+    height: 50px;
+}
+form label{
+    font-size: 30px;
+    color: #FC33FF ;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.todo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+}
+
+input{
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.todo form input {
+    background-color: rgb(41, 14, 14);
+    
+}
+
+.todo form select{
+    background-color: #afafaf;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    border-radius: 10px;
+    background-color: #7c7a7a;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+ .iconos   {
+    max-width: 10%;
+}
+
+footer{
+    background-color: rgb(202, 202, 202);
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.conte{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+.icono1{
+    width: 20%;
+    height: 20%;
+}
+.icono2{
+    width: 20%;
+    height: 20%;
+}
+.icono3{
+    width: 20%;
+    height: 20%;
+}
+.hi{
+    width: 20%;
+    height: 20%; 
+}
+@media (max-width: 1200px) {
+    .navbar a{
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .card, .card2, .card3, .card4, .card5, .card6 {
+        width: 200px;
+        height: 350px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card, .card2, .card3, .card4, .card5, .card6 {
+        width: 150px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 50px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .card, .card2, .card3, .card4, .card5, .card6 {
+        width: 120px;
+        height: 250px;
+    }
+}
+
